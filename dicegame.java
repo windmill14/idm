@@ -14,10 +14,13 @@ public class dicegame{
     System.out.print(">");
     String name = scanner.next();
     System.out.println("Hello, " + name + "!");
-
+    
     System.out.println("Rolling the dice...");
     System.out.println("Die 1: " + d1);
     System.out.println("Die 2: " + d2);
     System.out.println("Total value: " + sum);
+
+    if (sum>7) System.out.println("You won");
+    else System.out.println("You lost");
   }
 }
